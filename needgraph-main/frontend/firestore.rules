@@ -1,0 +1,105 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper Functions ──────────────────────────────
+    function isAuth() {
+      return request.auth != null;
+    }
+
+    function getRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    function isAdmin() {
+      return isAuth() && getRole() == 'super_admin';
+    }
+
+    function isCoordinator() {
+      return isAuth() && (getRole() in ['super_admin', 'coordinator']);
+    }
+
+    function isFieldWorker() {
+      return isAuth() && (getRole() in ['super_admin', 'coordinator', 'field_worker', 'volunteer']);
+    }
+
+    // ── Users ─────────────────────────────────────────
+    match /users/{userId} {
+      allow read: if isAuth();
+      allow create: if isAuth() && request.auth.uid == userId;
+      allow update: if isAuth() && (request.auth.uid == userId || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    // ── Needs ─────────────────────────────────────────
+    match /needs/{needId} {
+      allow read: if isAuth();
+      allow create: if isFieldWorker();
+      allow update: if isCoordinator();
+      allow delete: if isAdmin();
+    }
+
+    // ── Alerts ────────────────────────────────────────
+    match /alerts/{alertId} {
+      allow read: if isAuth();
+      allow create: if false; // Created by Cloud Functions only
+      allow update: if isCoordinator();
+      allow delete: if isAdmin();
+    }
+
+    // ── Predictions ───────────────────────────────────
+    match /predictions/{predId} {
+      allow read: if isAuth();
+      allow write: if false; // Cloud Functions only
+    }
+
+    // ── Volunteers ────────────────────────────────────
+    match /volunteers/{volId} {
+      allow read: if isAuth();
+      allow create: if isCoordinator();
+      allow update: if isCoordinator();
+      allow delete: if isAdmin();
+    }
+
+    // ── Causal Edges ──────────────────────────────────
+    match /causalEdges/{edgeId} {
+      allow read: if isAuth();
+      allow write: if false; // Cloud Functions only
+    }
+
+    // ── Resources ─────────────────────────────────────
+    match /resources/{resId} {
+      allow read: if isAuth();
+      allow create: if isCoordinator();
+      allow update: if isCoordinator();
+      allow delete: if isAdmin();
+    }
+
+    // ── NGOs ──────────────────────────────────────────
+    match /ngos/{ngoId} {
+      allow read: if isAuth();
+      allow create: if isAdmin();
+      allow update: if isAuth() && (isAdmin() || getRole() == 'ngo_admin');
+      allow delete: if isAdmin();
+
+      match /collaborationRequests/{reqId} {
+        allow read: if isAuth();
+        allow create: if isCoordinator();
+        allow update: if isAuth() && (isAdmin() || getRole() == 'ngo_admin');
+      }
+    }
+
+    // ── Activity Feed (Audit Trail) ───────────────────
+    match /activityFeed/{actId} {
+      allow read: if isAuth();
+      allow create: if isAuth(); // Append-only
+      allow update, delete: if false; // Immutable audit trail
+    }
+
+    // ── System Config ─────────────────────────────────
+    match /system/{docId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+  }
+}

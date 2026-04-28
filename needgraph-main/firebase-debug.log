@@ -1,0 +1,464 @@
+[debug] [2026-04-27T12:05:25.575Z] ----------------------------------------------------------------------
+[debug] [2026-04-27T12:05:25.577Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-04-27T12:05:25.577Z] CLI Version:   15.15.0
+[debug] [2026-04-27T12:05:25.577Z] Platform:      win32
+[debug] [2026-04-27T12:05:25.577Z] Node Version:  v24.13.0
+[debug] [2026-04-27T12:05:25.577Z] Time:          Mon Apr 27 2026 17:35:25 GMT+0530 (India Standard Time)
+[debug] [2026-04-27T12:05:25.577Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-27T12:05:27.336Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] Failed to authenticate, have you run firebase login?
+[warn] !  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[info] i  emulators: Detected demo project ID "demo-no-project", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-no-project\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[debug] [2026-04-27T12:05:27.359Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T12:05:27.359Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-04-27T12:05:27.362Z] Found emulator hub locator: {"version":"15.15.0","origins":["http://127.0.0.1:4400","http://[::1]:4400"],"pid":14492}
+[debug] [2026-04-27T12:05:27.362Z] Write emulator hub locator at C:\Users\IASsh\AppData\Local\Temp\hub-demo-no-project.json
+[debug] [2026-04-27T12:05:27.370Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T12:05:27.370Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T12:05:27.370Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T12:05:27.370Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[info] i  functions: Watching "C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\" for Cloud Functions..."}}
+[debug] [2026-04-27T12:05:27.385Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:05:28.492Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:05:28.492Z] Building nodejs source
+[debug] [2026-04-27T12:05:28.492Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:05:28.494Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:05:28.503Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8242
+
+[debug] [2026-04-27T12:05:29.598Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[info] i  functions[asia-south1-onNeedCreated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] i  functions[asia-south1-onNeedUpdated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] +  functions[asia-south1-computeSeverityScore]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/computeSeverityScore). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/computeSeverityScore)."}}
+[info] +  functions[asia-south1-getCausalGraph]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/getCausalGraph). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/getCausalGraph)."}}
+[info] +  functions[asia-south1-runCrisisSimulation]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/runCrisisSimulation). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/runCrisisSimulation)."}}
+[info] i  functions[asia-south1-sendCriticalAlert]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] +  functions[asia-south1-dispatchResource]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/dispatchResource). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/dispatchResource)."}}
+[info] +  functions[asia-south1-parseWhatsAppReport]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/parseWhatsAppReport). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/parseWhatsAppReport)."}}
+[debug] [2026-04-27T12:05:33.683Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-04-27T12:07:47.543Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.543Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.550Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.550Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.554Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.562Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.564Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.564Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.564Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.570Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.570Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.579Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.579Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.579Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.579Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.584Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.584Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:47.588Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:07:48.592Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:07:49.777Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:07:49.777Z] Building nodejs source
+[debug] [2026-04-27T12:07:49.778Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:07:49.779Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:07:49.790Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8316
+
+[debug] [2026-04-27T12:07:50.441Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[debug] [2026-04-27T12:10:44.572Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.601Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.609Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.609Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.609Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.609Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.609Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.609Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.610Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.620Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.620Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.620Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.620Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.620Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.620Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.623Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.623Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:44.626Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:10:45.629Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:10:46.982Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:10:46.982Z] Building nodejs source
+[debug] [2026-04-27T12:10:46.982Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:10:46.983Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:10:47.005Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8000
+
+[debug] [2026-04-27T12:10:47.935Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[debug] [2026-04-27T12:14:14.634Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.634Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.637Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.639Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.646Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.647Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.648Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.650Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.651Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.652Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.654Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.656Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.658Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.658Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.664Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.665Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.667Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:14.671Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:15.685Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:14:16.994Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:14:16.995Z] Building nodejs source
+[debug] [2026-04-27T12:14:16.995Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:14:16.999Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:14:17.038Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8707
+
+[debug] [2026-04-27T12:14:17.774Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[debug] [2026-04-27T12:14:45.583Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\src\resources\dispatchResource.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\src\\resources\\dispatchResource.ts changed, reloading triggers"}}
+[debug] [2026-04-27T12:14:46.592Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:14:47.604Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:14:47.604Z] Building nodejs source
+[debug] [2026-04-27T12:14:47.604Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:14:47.605Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:14:47.611Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8589
+
+[debug] [2026-04-27T12:14:48.402Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[debug] [2026-04-27T12:15:23.063Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.063Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.074Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.075Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.088Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.088Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.093Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.094Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.097Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.097Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.101Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.101Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.106Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.106Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.110Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.110Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.113Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:23.115Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:24.124Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:15:25.099Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:15:25.099Z] Building nodejs source
+[debug] [2026-04-27T12:15:25.100Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:15:25.100Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:15:25.105Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8033
+
+[debug] [2026-04-27T12:15:25.766Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[debug] [2026-04-27T12:15:40.582Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\src\resources\dispatchResource.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\src\\resources\\dispatchResource.ts changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:41.590Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:15:43.016Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:15:43.017Z] Building nodejs source
+[debug] [2026-04-27T12:15:43.017Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:15:43.018Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:15:43.027Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8099
+
+[debug] [2026-04-27T12:15:43.812Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[debug] [2026-04-27T12:15:59.140Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.141Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.147Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.148Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.155Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.156Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.157Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.162Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.166Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.166Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.170Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.171Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.173Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.173Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.179Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.179Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.182Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2026-04-27T12:15:59.182Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js changed, reloading triggers"}}
+[debug] [2026-04-27T12:16:00.185Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:16:01.333Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:16:01.333Z] Building nodejs source
+[debug] [2026-04-27T12:16:01.333Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:16:01.334Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:16:01.338Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8243
+
+[debug] [2026-04-27T12:16:01.981Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}
+[debug] [2026-04-27T12:33:00.077Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\src\index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\src\\index.ts changed, reloading triggers"}}
+[debug] [2026-04-27T12:33:01.083Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-27T12:33:02.338Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-27T12:33:02.338Z] Building nodejs source
+[debug] [2026-04-27T12:33:02.339Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-27T12:33:02.341Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-27T12:33:02.371Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8422
+
+[debug] [2026-04-27T12:33:03.200Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport."}}

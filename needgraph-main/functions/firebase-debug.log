@@ -1,0 +1,412 @@
+[debug] [2026-04-27T12:04:04.976Z] ----------------------------------------------------------------------
+[debug] [2026-04-27T12:04:04.978Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-04-27T12:04:04.978Z] CLI Version:   15.15.0
+[debug] [2026-04-27T12:04:04.978Z] Platform:      win32
+[debug] [2026-04-27T12:04:04.978Z] Node Version:  v24.13.0
+[debug] [2026-04-27T12:04:04.978Z] Time:          Mon Apr 27 2026 17:34:04 GMT+0530 (India Standard Time)
+[debug] [2026-04-27T12:04:04.978Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-27T12:04:04.980Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[error] !!  functions: Failed to start Functions emulator: codebase source must be specified. Must specify either 'source' or 'remoteSource' in a functions config. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to start Functions emulator: codebase source must be specified. Must specify either 'source' or 'remoteSource' in a functions config."}}
+[debug] [2026-04-27T12:04:06.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] Failed to authenticate, have you run firebase login?
+[warn] !  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
+[warn] !  Could not find config (firebase.json) so using defaults. 
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[info] i  emulators: Detected demo project ID "demo-no-project", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-no-project\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[debug] [2026-04-27T12:04:06.507Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-27T12:04:06.507Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-04-27T12:04:06.519Z] Write emulator hub locator at C:\Users\IASsh\AppData\Local\Temp\hub-demo-no-project.json
+[error] !!  functions: Failed to start Functions emulator: codebase source must be specified. Must specify either 'source' or 'remoteSource' in a functions config. {"metadata":{"emulator":{"name":"functions"},"message":"Failed to start Functions emulator: codebase source must be specified. Must specify either 'source' or 'remoteSource' in a functions config."}}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2026-04-27T12:04:06.538Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2026-04-27T12:04:06.717Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2026-04-27T12:04:06.717Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2026-04-27T12:04:07.224Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-04-27T12:04:07.225Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-04-27T12:04:10.713Z] Data is 3538469
+[debug] [2026-04-27T12:04:10.714Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T12:04:10.714Z] [unzip] Processing entry: client\
+[debug] [2026-04-27T12:04:10.714Z] [unzip] mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\
+[debug] [2026-04-27T12:04:10.716Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2026-04-27T12:04:10.716Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2026-04-27T12:04:10.716Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.716Z] [unzip] Writing file: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\favicon-16x16.png
+[debug] [2026-04-27T12:04:10.718Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2026-04-27T12:04:10.718Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2026-04-27T12:04:10.718Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.718Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\safari-pinned-tab.svg
+[debug] [2026-04-27T12:04:10.721Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2026-04-27T12:04:10.721Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2026-04-27T12:04:10.721Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.722Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\favicon.ico
+[debug] [2026-04-27T12:04:10.724Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2026-04-27T12:04:10.724Z] [unzip] Processing entry: client\index.html
+[debug] [2026-04-27T12:04:10.724Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.724Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\index.html
+[debug] [2026-04-27T12:04:10.726Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2026-04-27T12:04:10.726Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2026-04-27T12:04:10.726Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.726Z] [unzip] Writing file: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-192x192.png
+[debug] [2026-04-27T12:04:10.727Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2026-04-27T12:04:10.727Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2026-04-27T12:04:10.727Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.727Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\apple-touch-icon.png
+[debug] [2026-04-27T12:04:10.728Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2026-04-27T12:04:10.728Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2026-04-27T12:04:10.728Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.729Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-512x512.png
+[debug] [2026-04-27T12:04:10.731Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2026-04-27T12:04:10.731Z] [unzip] Processing entry: client\manifest.json
+[debug] [2026-04-27T12:04:10.731Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.731Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
+[debug] [2026-04-27T12:04:10.732Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2026-04-27T12:04:10.733Z] [unzip] Processing entry: client\robots.txt
+[debug] [2026-04-27T12:04:10.733Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.733Z] [unzip] Writing file: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\robots.txt
+[debug] [2026-04-27T12:04:10.734Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2026-04-27T12:04:10.734Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2026-04-27T12:04:10.734Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.734Z] [unzip] Writing file: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\mstile-150x150.png
+[debug] [2026-04-27T12:04:10.735Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T12:04:10.735Z] [unzip] Processing entry: client\assets\
+[debug] [2026-04-27T12:04:10.735Z] [unzip] mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\
+[debug] [2026-04-27T12:04:10.735Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2026-04-27T12:04:10.736Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js
+[debug] [2026-04-27T12:04:10.736Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2026-04-27T12:04:10.736Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js
+[debug] [2026-04-27T12:04:10.752Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2026-04-27T12:04:10.752Z] [unzip] Processing entry: client\assets\index-CjB9C900.css
+[debug] [2026-04-27T12:04:10.752Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2026-04-27T12:04:10.752Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-CjB9C900.css
+[debug] [2026-04-27T12:04:10.755Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2026-04-27T12:04:10.755Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js.map
+[debug] [2026-04-27T12:04:10.755Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2026-04-27T12:04:10.756Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js.map
+[debug] [2026-04-27T12:04:10.798Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T12:04:10.798Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2026-04-27T12:04:10.798Z] [unzip] mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\
+[debug] [2026-04-27T12:04:10.799Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2026-04-27T12:04:10.799Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2026-04-27T12:04:10.800Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions
+[debug] [2026-04-27T12:04:10.800Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\default-extension.png
+[debug] [2026-04-27T12:04:10.801Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T12:04:10.801Z] [unzip] Processing entry: client\assets\img\
+[debug] [2026-04-27T12:04:10.801Z] [unzip] mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\
+[debug] [2026-04-27T12:04:10.801Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2026-04-27T12:04:10.801Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2026-04-27T12:04:10.801Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\img
+[debug] [2026-04-27T12:04:10.802Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\database.png
+[debug] [2026-04-27T12:04:10.803Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T12:04:10.803Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2026-04-27T12:04:10.803Z] [unzip] mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\
+[debug] [2026-04-27T12:04:10.804Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2026-04-27T12:04:10.804Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2026-04-27T12:04:10.804Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.804Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2026-04-27T12:04:10.805Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2026-04-27T12:04:10.805Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2026-04-27T12:04:10.805Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.806Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2026-04-27T12:04:10.807Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2026-04-27T12:04:10.807Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2026-04-27T12:04:10.807Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.807Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2026-04-27T12:04:10.808Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2026-04-27T12:04:10.808Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2026-04-27T12:04:10.808Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.808Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2026-04-27T12:04:10.809Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2026-04-27T12:04:10.809Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2026-04-27T12:04:10.809Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.810Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2026-04-27T12:04:10.810Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2026-04-27T12:04:10.811Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2026-04-27T12:04:10.811Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.811Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2026-04-27T12:04:10.812Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2026-04-27T12:04:10.812Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2026-04-27T12:04:10.812Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.812Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2026-04-27T12:04:10.813Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2026-04-27T12:04:10.813Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2026-04-27T12:04:10.813Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.814Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2026-04-27T12:04:10.815Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2026-04-27T12:04:10.815Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2026-04-27T12:04:10.815Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.816Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2026-04-27T12:04:10.816Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2026-04-27T12:04:10.816Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2026-04-27T12:04:10.816Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.817Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2026-04-27T12:04:10.817Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2026-04-27T12:04:10.817Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2026-04-27T12:04:10.817Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.817Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2026-04-27T12:04:10.818Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2026-04-27T12:04:10.818Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2026-04-27T12:04:10.818Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.818Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2026-04-27T12:04:10.819Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2026-04-27T12:04:10.819Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2026-04-27T12:04:10.819Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2026-04-27T12:04:10.819Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2026-04-27T12:04:10.820Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2026-04-27T12:04:10.820Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2026-04-27T12:04:10.820Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.820Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\browserconfig.xml
+[debug] [2026-04-27T12:04:10.821Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2026-04-27T12:04:10.821Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2026-04-27T12:04:10.821Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2026-04-27T12:04:10.821Z] [unzip] Writing file: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\client\favicon-32x32.png
+[debug] [2026-04-27T12:04:10.822Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2026-04-27T12:04:10.822Z] [unzip] Processing entry: server\
+[debug] [2026-04-27T12:04:10.822Z] [unzip] mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\server\
+[debug] [2026-04-27T12:04:10.823Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2026-04-27T12:04:10.823Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2026-04-27T12:04:10.823Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2026-04-27T12:04:10.823Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs.map
+[debug] [2026-04-27T12:04:10.827Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2026-04-27T12:04:10.827Z] [unzip] Processing entry: server\server.mjs
+[debug] [2026-04-27T12:04:10.827Z] [unzip] else mkdir: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2026-04-27T12:04:10.827Z] [unzip] deflating: C:\Users\IASsh\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs
+[debug] [2026-04-27T12:04:10.836Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬──────────────────────────────────┬─────────────────────┐
+│ Emulator  │ Host:Port                        │ View in Emulator UI │
+├───────────┼──────────────────────────────────┼─────────────────────┤
+│ Functions │ Failed to initialize (see above) │                     │
+└───────────┴──────────────────────────────────┴─────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-04-28T10:30:53.369Z] ----------------------------------------------------------------------
+[debug] [2026-04-28T10:30:53.373Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-04-28T10:30:53.374Z] CLI Version:   15.15.0
+[debug] [2026-04-28T10:30:53.374Z] Platform:      win32
+[debug] [2026-04-28T10:30:53.374Z] Node Version:  v24.13.0
+[debug] [2026-04-28T10:30:53.374Z] Time:          Tue Apr 28 2026 16:00:53 GMT+0530 (India Standard Time)
+[debug] [2026-04-28T10:30:53.374Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-28T10:30:57.573Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] Failed to authenticate, have you run firebase login?
+[warn] !  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[info] i  emulators: Detected demo project ID "demo-no-project", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-no-project\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[debug] [2026-04-28T10:30:57.643Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:30:57.643Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-04-28T10:30:57.649Z] Found emulator hub locator: {"version":"15.15.0","origins":["http://127.0.0.1:4400","http://[::1]:4400"],"pid":5252}
+[debug] [2026-04-28T10:30:57.649Z] Write emulator hub locator at C:\Users\IASsh\AppData\Local\Temp\hub-demo-no-project.json
+[debug] [2026-04-28T10:30:57.664Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:30:57.664Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:30:57.664Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:30:57.664Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[info] i  functions: Watching "C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\" for Cloud Functions..."}}
+[debug] [2026-04-28T10:30:57.687Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-28T10:30:59.558Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-28T10:30:59.558Z] Building nodejs source
+[debug] [2026-04-28T10:30:59.558Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-28T10:30:59.562Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-28T10:30:59.575Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8949
+
+[debug] [2026-04-28T10:31:01.651Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"},"addVolunteer":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"addVolunteer"},"createTask":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"createTask"},"updateTaskStatus":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"updateTaskStatus"},"submitNeed":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"callableTrigger":{},"entryPoint":"submitNeed"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport, addVolunteer, createTask, updateTaskStatus, submitNeed. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport, addVolunteer, createTask, updateTaskStatus, submitNeed."}}
+[info] i  functions[asia-south1-onNeedCreated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] i  functions[asia-south1-onNeedUpdated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] +  functions[asia-south1-computeSeverityScore]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/computeSeverityScore). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/computeSeverityScore)."}}
+[info] +  functions[asia-south1-getCausalGraph]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/getCausalGraph). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/getCausalGraph)."}}
+[info] +  functions[asia-south1-runCrisisSimulation]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/runCrisisSimulation). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/runCrisisSimulation)."}}
+[info] i  functions[asia-south1-sendCriticalAlert]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] +  functions[asia-south1-dispatchResource]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/dispatchResource). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/dispatchResource)."}}
+[info] +  functions[asia-south1-parseWhatsAppReport]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/parseWhatsAppReport). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/parseWhatsAppReport)."}}
+[info] +  functions[asia-south1-addVolunteer]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/addVolunteer). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/addVolunteer)."}}
+[info] +  functions[asia-south1-createTask]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/createTask). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/createTask)."}}
+[info] +  functions[asia-south1-updateTaskStatus]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/updateTaskStatus). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/updateTaskStatus)."}}
+[info] +  functions[us-central1-submitNeed]: http function initialized (http://127.0.0.1:5001/demo-no-project/us-central1/submitNeed). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/us-central1/submitNeed)."}}
+[debug] [2026-04-28T10:31:05.775Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-04-28T10:34:36.549Z] ----------------------------------------------------------------------
+[debug] [2026-04-28T10:34:36.553Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2026-04-28T10:34:36.554Z] CLI Version:   15.15.0
+[debug] [2026-04-28T10:34:36.554Z] Platform:      win32
+[debug] [2026-04-28T10:34:36.554Z] Node Version:  v24.13.0
+[debug] [2026-04-28T10:34:36.554Z] Time:          Tue Apr 28 2026 16:04:36 GMT+0530 (India Standard Time)
+[debug] [2026-04-28T10:34:36.555Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-28T10:34:40.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] Failed to authenticate, have you run firebase login?
+[warn] !  emulators: You are not currently authenticated so some features may not work correctly. Please run firebase login to authenticate the CLI. 
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[info] i  emulators: Detected demo project ID "demo-no-project", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-no-project\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[debug] [2026-04-28T10:34:41.071Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:34:41.071Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-04-28T10:34:41.076Z] Found emulator hub locator: {"version":"15.15.0","origins":["http://127.0.0.1:4400","http://[::1]:4400"],"pid":24116}
+[debug] [2026-04-28T10:34:41.077Z] Write emulator hub locator at C:\Users\IASsh\AppData\Local\Temp\hub-demo-no-project.json
+[debug] [2026-04-28T10:34:41.100Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:34:41.100Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:34:41.100Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-04-28T10:34:41.100Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[info] i  functions: Watching "C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\" for Cloud Functions..."}}
+[debug] [2026-04-28T10:34:41.138Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-28T10:34:43.532Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-28T10:34:43.533Z] Building nodejs source
+[debug] [2026-04-28T10:34:43.534Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-28T10:34:43.539Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-28T10:34:43.557Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8121
+
+[debug] [2026-04-28T10:34:45.764Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"},"addVolunteer":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"addVolunteer"},"createTask":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"createTask"},"updateTaskStatus":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"updateTaskStatus"},"submitNeed":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"callableTrigger":{},"entryPoint":"submitNeed"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport, addVolunteer, createTask, updateTaskStatus, submitNeed. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport, addVolunteer, createTask, updateTaskStatus, submitNeed."}}
+[info] i  functions[asia-south1-onNeedCreated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] i  functions[asia-south1-onNeedUpdated]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] +  functions[asia-south1-computeSeverityScore]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/computeSeverityScore). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/computeSeverityScore)."}}
+[info] +  functions[asia-south1-getCausalGraph]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/getCausalGraph). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/getCausalGraph)."}}
+[info] +  functions[asia-south1-runCrisisSimulation]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/runCrisisSimulation). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/runCrisisSimulation)."}}
+[info] i  functions[asia-south1-sendCriticalAlert]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[info] +  functions[asia-south1-dispatchResource]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/dispatchResource). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/dispatchResource)."}}
+[info] +  functions[asia-south1-parseWhatsAppReport]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/parseWhatsAppReport). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/parseWhatsAppReport)."}}
+[info] +  functions[asia-south1-addVolunteer]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/addVolunteer). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/addVolunteer)."}}
+[info] +  functions[asia-south1-createTask]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/createTask). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/createTask)."}}
+[info] +  functions[asia-south1-updateTaskStatus]: http function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/updateTaskStatus). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/asia-south1/updateTaskStatus)."}}
+[info] +  functions[us-central1-submitNeed]: http function initialized (http://127.0.0.1:5001/demo-no-project/us-central1/submitNeed). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/demo-no-project/us-central1/submitNeed)."}}
+[debug] [2026-04-28T10:34:49.852Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-04-28T10:35:01.120Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\index.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\index.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.155Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\ai\computeSeverityScore.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\ai\\computeSeverityScore.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.271Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\graph\getCausalGraph.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\graph\\getCausalGraph.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.310Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\submitNeed.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\submitNeed.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.349Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedUpdated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedUpdated.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.396Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\needs\onNeedCreated.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\needs\\onNeedCreated.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.430Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\notifications\sendCriticalAlert.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\notifications\\sendCriticalAlert.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.472Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\resources\dispatchResource.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\resources\\dispatchResource.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.520Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\simulator\runCrisisSimulation.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\simulator\\runCrisisSimulation.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.556Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\tasks\createTask.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\tasks\\createTask.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.646Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\volunteers\addVolunteer.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\volunteers\\addVolunteer.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:01.685Z] File C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\lib\whatsapp\parseWhatsAppReport.js.map changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\IASsh\\OneDrive\\Desktop\\needgraph2\\needgraph-main\\functions\\lib\\whatsapp\\parseWhatsAppReport.js.map changed, reloading triggers"}}
+[debug] [2026-04-28T10:35:02.697Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-04-28T10:35:05.044Z] > [functions] package.json contents: {
+  "name": "needgraph-functions",
+  "version": "1.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@google-cloud/vertexai": "^1.0.0",
+    "firebase-admin": "^12.0.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^15.15.0",
+    "typescript": "^5.4.0"
+  }
+}
+[debug] [2026-04-28T10:35:05.044Z] Building nodejs source
+[debug] [2026-04-28T10:35:05.045Z] Failed to find version of module node: reached end of search path C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules
+[warn] !  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[debug] [2026-04-28T10:35:05.048Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-04-28T10:35:05.062Z] Found firebase-functions binary at 'C:\Users\IASsh\OneDrive\Desktop\needgraph2\needgraph-main\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8192
+
+[debug] [2026-04-28T10:35:06.955Z] Got response from /__/functions.yaml {"endpoints":{"onNeedCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedCreated"},"onNeedUpdated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.updated","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"needs/{needId}"},"retry":false},"entryPoint":"onNeedUpdated"},"computeSeverityScore":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"computeSeverityScore"},"getCausalGraph":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"getCausalGraph"},"runCrisisSimulation":{"availableMemoryMb":512,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"runCrisisSimulation"},"sendCriticalAlert":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"alerts/{alertId}"},"retry":false},"entryPoint":"sendCriticalAlert"},"dispatchResource":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"dispatchResource"},"parseWhatsAppReport":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"httpsTrigger":{},"entryPoint":"parseWhatsAppReport"},"addVolunteer":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"addVolunteer"},"createTask":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"createTask"},"updateTaskStatus":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["asia-south1"],"labels":{},"callableTrigger":{},"entryPoint":"updateTaskStatus"},"submitNeed":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"callableTrigger":{},"entryPoint":"submitNeed"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport, addVolunteer, createTask, updateTaskStatus, submitNeed. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onNeedCreated, onNeedUpdated, computeSeverityScore, getCausalGraph, runCrisisSimulation, sendCriticalAlert, dispatchResource, parseWhatsAppReport, addVolunteer, createTask, updateTaskStatus, submitNeed."}}
